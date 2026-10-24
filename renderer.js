@@ -24,7 +24,7 @@ function renderKanban(data) {
     // Réinitialisation des colonnes en gardant uniquement l'en-tête
     colATraiter.innerHTML = `<div class="column-header"><span>● À traiter</span><span class="column-count" id="count-atraiter">0</span></div>`;
     colEnCours.innerHTML = `<div class="column-header"><span>● En cours</span><span class="column-count" id="count-encours">0</span></div>`;
-    colVerifie.innerHTML = `<div class="column-header"><span>● Vérifié ✅</span><span class="column-count" id="count-verifie">0</span></div>`;
+    colVerifie.innerHTML = `<div class="column-header"><span>● Vérifié </span><span class="column-count" id="count-verifie">0</span></div>`;
 
     if (!data || data.length === 0) {
         colATraiter.innerHTML += '<div class="empty-col">Aucun risque détecté.</div>';
